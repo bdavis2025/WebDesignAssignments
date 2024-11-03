@@ -1,0 +1,128 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 5
+   Case Problem 3
+
+   Dome Table Style Sheet
+   Author: 	Von Davis
+   Date:   	11/16/12
+
+   Filename:         dtable.css
+   Supporting files: bottom.jpg, bottomleft.jpg, bottomright.jpg,
+                     left.jpg,right.jpg, tableback.jpg,
+                     top.jpg, topleft.jpg, topright.jpg
+
+*/
+
+/* Styles for the domeSpecs table */
+
+table.domeSpecs {
+	font-size: 16px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	float: right;
+	border-collapse: collapse;
+	background: url(tableback.png) bottom right no-repeat;
+	background-size: cover;
+	}
+
+table.domeSpecs th, table.domeSpecs td {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	}
+	
+/* Styles for the table caption */
+
+table.domeSpecs caption {
+	font-size: 18px;
+	letter-spacing: 5px;
+	caption-side: top;
+	text-align: center;
+	margin-bottom: 10px;
+	}
+	
+/* Styles for the table header */
+
+table.domeSpecs thead {
+	border-bottom: 2px solid gray;
+	background: url(top.jpg) repeat-x;
+	}
+	
+table.domeSpecs thead th:first-of-type {
+	background: url(topleft.jpg) top left no-repeat;
+}
+
+table.domeSpecs thead th:last-of-type {
+	background: url(topright.jpg) top right no-repeat;
+	}
+	
+table.domeSpecs thead tr {
+	height: 40px;
+	}
+	
+table.domeSpecs thead tr th {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 5px;
+	padding-left: 5px;
+	letter-spacing: 2px;
+	}
+	
+/* Styles for the table footer */
+
+table.domeSpecs tfoot tr {
+	border-top: 2px solid gray;
+	text-align: center;
+	background: url(bottom.jpg) repeat-x;
+	height: 40px;
+	}
+	
+table.domeSpecs tfoot tr td:first-of-type {
+	background: url(bottomleft.jpg) bottom left no-repeat;
+	}
+	
+table.domeSpecs tfoot tr td:last-of-type {
+	background: url(bottomright.jpg) bottom right no-repeat;
+	}
+	
+/* Styles for the table body */
+
+table.domeSpecs tbody tr {
+	height: 50px;
+	border-bottom: 1px dotted gray;
+	}
+	
+table.domeSpecs tbody tr th:first-of-type {
+	background: url(left.jpg) top left repeat-y;
+	text-align: left;
+	}
+	
+table.domeSpecs tbody tr td:last-of-type {
+	background: url(right.jpg) top right repeat-y;
+	text-align: right;
+	}
+	
+table.domeSpecs tbody tr:nth-of-type(even) {
+	background-color: rgba(152, 228, 215, 0.6);
+	}
+	
+table.domeSpecs tbody tr:nth-of-type(odd) {
+	background-color: rgba(255, 255, 255, 0.6);
+	}
+
+/* Styles for the table columns */
+
+table.domeSpecs col.firstColumn {
+	width: 22%;
+}
+
+table.domeSpecs col.middleColumns {
+	width: 28%;
+	}
+	
+table.domeSpecs col.lastColumn {
+	width: 22%;
+	}
+
